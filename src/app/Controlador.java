@@ -71,8 +71,8 @@ public class Controlador {
         //Carga en la config los valores ingresados
         config.tamanioPobInicial = Integer.parseInt(txtTamanioPobInicial.getText());
         config.tamanioPobTorneo = Integer.parseInt(txtTamanioPobTorneo.getText());
-        config.probCruce = Double.parseDouble(txtProbCruce.getText());
-        config.probMutacion = Double.parseDouble(txtProbMutacion.getText());
+        config.probCruce = Double.parseDouble(txtProbCruce.getText().replace(",", "."));
+        config.probMutacion = Double.parseDouble(txtProbMutacion.getText().replace(",", "."));
         config.cantVueltas = Integer.parseInt(txtCantCorridas.getText());
 
         int vuelta = 0;
